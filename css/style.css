@@ -1,0 +1,548 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: arial;
+}
+html,body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+[target]{
+	background-color: #FBFCFE;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/************ header ****************/
+
+header{
+	background-image: url('../imagens/background-header.png');
+	background-size: cover;
+	background-position: center;
+	min-height: 600px;
+	width: 100%;
+	padding: 30px;
+}
+header .container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.top-header .logo{
+	height: 40px;
+	float: left;
+	width: 250px;
+}
+.top-header .logo>img{
+	max-width: 100%;
+	height: 100%;
+}
+
+/*= menu desktop =*/
+
+.top-header .desktop{
+	float: right;
+	padding-top: 13px;
+}
+.top-header .desktop>ul>li{
+	display: inline-block;
+	padding: 0 10px;
+}
+.top-header .desktop>ul>li>a{
+	font-size: 15px;
+	color: #F0F4FA;
+}
+.top-header .desktop>ul>li>a:hover{
+	border-bottom: 2px solid #FFDD33;
+	padding-bottom: 4px;
+}
+.top-header .desktop>ul>li>a.contato{
+	background-color: #0F3FD3;
+	border-radius: 10px;
+	padding: 15px;
+}
+.top-header .desktop>ul>li>a.contato:hover{
+	background-color: #1B49D4;
+	border: 0;
+}
+
+/*= menu mobile =*/
+
+.top-header .mobile{
+	float: right;
+	display: none;
+}
+.top-header .mobile>h3{
+	color: white;
+	font-size: 37.5px;
+	cursor: pointer;
+}
+/*.top-header .mobile>ul{
+	width: 100%;
+	opacity: 0;
+	transition: 1s;
+	left: 0;
+	top: 85px;
+	position: absolute;
+	background-color: #255AFF;
+}
+.mostrar{
+	opacity: 1;
+}
+.recolher{
+	opacity: 0;
+}*/
+.top-header .mobile>ul{
+	width: 100%;
+	display: none;
+	left: 0;
+	top: 85px;
+	position: absolute;
+	background-color: #255AFF;
+}
+.top-header .mobile>ul>li{
+	width: 100%;
+	border-bottom: 1px solid white;
+	text-align: center;
+	padding: 15px 10px;
+}
+.top-header .mobile>ul>li>a{
+	font-size: 15px;
+	color: #F0F4FA;
+}
+.top-header .mobile>ul>li:hover{
+	background-color: #1B49D4;
+}
+
+.section-header{
+	padding-top: 60px;
+}
+.section-header>h2{
+	text-align: center;
+	color: #F0F4FA;
+	padding-bottom: 10px;
+	font-size: 50px;
+	font-weight: lighter;
+}
+.section-header>h4{
+	text-align: center;
+	color: #F0F4FA;
+	font-size: 17px;
+	font-weight: lighter;
+}
+.section-header>div{
+	max-width: 800px;
+	margin: 50px auto 0 auto;
+}
+.section-header>div>img{
+	max-width: 100%;
+}
+
+/****** empresas parceiras *****/
+
+.empresas-parcerias{
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	margin-top: 30px;
+}
+.empresas-parcerias>div{
+	padding: 10px;
+}
+.empresas-parcerias>div>img{
+	max-width: 100%;
+}
+
+/****** empresa e diferenciais *****/
+
+.sobre-empresa{
+	padding: 35px 15px;
+}
+.sobre-empresa>h2{
+	font-size: 35px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.sobre-empresa>h4{
+	font-size: 15px;
+	color: #7E92AC;
+	text-align: center;
+}
+
+.sobre-empresa .diferenciais{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.sobre-empresa .diferenciais .diferencial-single{
+	width: calc(100% / 3);
+	padding: 10px 15px;
+}
+.sobre-empresa .diferenciais .diferencial-single>div{
+	border-radius: 10px;
+	box-shadow: 0px 20px 40px #2426721C;
+	background-color: white;
+	padding: 55px 25px;
+}
+.icon-diferencial{
+	text-align: left;
+}
+.icon-diferencial>img{
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+}
+.conteudo-diferencial>h4{
+	font-size: 21px;
+	padding-bottom: 10px;
+}
+.conteudo-diferencial>p{
+	font-size: 14px;
+	color: #7E92AC;
+}
+
+/************* sessão de e-mail ***************/
+
+.banner-image{
+	background-image: url('../imagens/banner-img.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	min-height: 325px;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.sessao-email{
+	display: inline-block;
+}
+.sessao-email>h2{
+	font-size: 40px;
+	color: white;
+	font-weight: normal;
+	padding-bottom: 15px;
+}
+.sessao-email>h4{
+	font-size: 17px;
+	color: white;
+	font-weight: lighter;
+}
+.sessao-email>a{
+	margin-top: 50px;
+	border-radius: 10px;
+	color: #0F3FD3;
+	padding: 15px;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: #FFDD33;
+	display: inline-block;
+}
+.sessao-email>a:hover{
+	background-color: #FFE14B;
+}
+
+/************* benefícios ***************/
+
+.beneficios{
+	padding: 60px 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.lista-beneficios{
+	width: 50%;
+	padding: 0 15px;
+}
+.lista-beneficios>h2{
+	padding-bottom: 30px;
+	font-size: 35px;
+}
+.lista-beneficios>div{
+	display: flex;
+	height: 70px;
+	margin: 10px 0;
+}
+.lista-beneficios>div>.icone{
+	display: inline-block;
+}
+.lista-beneficios>div>.icone>img{
+	max-width: 100%;
+	height: 100%;
+}
+.lista-beneficios>div>.descricao{
+	display: inline-block;
+	padding-top: 12.5px;
+	width: 60%;
+}
+.lista-beneficios>div>.descricao>p{
+	font-size: 14px;
+	color: #7E92AC;
+}
+.lista-beneficios>a{
+	color: white;
+	margin-top: 30px;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: #255AFF;
+	font-size: 17px;
+	padding: 15px 25px;
+}
+.lista-beneficios>a:hover{
+	background-color: #1B49D4;
+}
+
+.imagem-beneficios{
+	width: 50%;
+}
+.imagem-beneficios>img{
+	max-width: 100%;
+}
+
+/************* depoimentos ***************/
+
+.depoimentos{
+	padding: 40px 20px;
+	width: 100%;
+}
+.depoimentos>h2{
+	text-align: center;
+	font-size: 40px;
+	padding-bottom: 30px;
+}
+.wrap-depoimentos{
+	/*display: flex;*/
+}
+.separar-depoimentos{
+	padding: 20px;
+}
+.depoimento-single{
+	background-color: white;
+	box-shadow: 0px 20px 50px #70707016;
+	padding: 40px 20px;
+	border-radius: 10px;
+	width: 100%;
+}
+.depoimento-single .foto-depoimento{
+	width: 100%;
+	text-align: center;
+}
+.depoimento-single .foto-depoimento>img{
+	display: inline-block;
+	width: 100px;
+	max-width: 100%;
+	height: 100px;
+}
+.depoimento-single .dados-depoimento{
+	padding: 45px 10px;
+	text-align: center;
+	max-width: 500px;
+	margin: 0 auto;
+}
+.depoimento-single .dados-depoimento>h2{
+	font-size: 21px;
+	padding-bottom: 15px;
+}
+.depoimento-single .dados-depoimento>h4{
+	font-size: 17px;
+	padding-bottom: 25px;
+	color: #7E92AC;
+}
+.depoimento-single .dados-depoimento>p{
+	font-size: 17px;
+	color: #7E92AC;
+}
+.depoimento-single .avaliacao-depoimento{
+	width: 100%;
+	text-align: center;
+}
+.depoimento-single .avaliacao-depoimento>img{
+	display: inline-block;
+	max-width: 100%;
+}
+
+/************* contato ***************/
+
+.form-contato{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 60px 20px;
+}
+.form-contato>h2{
+	font-size: 35px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.form-contato>form>div{
+	padding-bottom: 50px;
+}
+.form-contato>form>div>input[type=text],
+.form-contato>form>div>input[type=email]{
+	outline: 0;
+	padding: 10px 20px;
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid #C3CCE8;
+	color: #C3CCE8;
+	font-size: 13px;
+	height: 50px;
+}
+.form-contato>form>div>textarea{
+	outline: 0;
+	padding: 20px;
+	resize: vertical;
+	width: 100%;
+	border-radius: 10px;
+	border: 1px solid #C3CCE8;
+	color: #C3CCE8;
+	font-size: 13px;
+	height: 250px;
+}
+.form-contato>form>div>input[type=submit]{
+	outline: 0;
+	cursor: pointer;
+	height: 50px;
+	width: 100%;
+	border-radius: 10px;
+	border: 0;
+	color: white;
+	background-color: #255AFF;
+	font-size: 17px;
+}
+.form-contato>form>div>input[type=submit]:hover{
+	background-color: #1B49D4;
+}
+
+/************* footer ***************/
+
+footer{
+	background-color: #255AFF;
+	padding: 60px 20px;
+}
+.conteudo-footer .creditos{
+	float: left;
+}
+.conteudo-footer .creditos>h3{
+	color: white;
+	font-size: 20px;
+}
+.conteudo-footer .desktop{
+	float: right;
+}
+.conteudo-footer .desktop>ul>li{
+	display: inline-block;
+	padding: 0 10px;
+}
+.conteudo-footer .desktop>ul>li>a{
+	font-size: 15px;
+	color: #F0F4FA;
+}
+.conteudo-footer .desktop>ul>li>a:hover{
+	border-bottom: 2px solid #FFDD33;
+	padding-bottom: 4px;
+}
+.conteudo-footer .desktop>ul>li>a.contato{
+	background-color: #0F3FD3;
+	border-radius: 10px;
+	padding: 15px;
+}
+.conteudo-footer .desktop>ul>li>a.contato:hover{
+	background-color: #1B49D4;
+	border: 0;
+}
+
+/************* slick slider ***************/
+
+/*.slick-slide{
+	margin-left:27px;
+}
+
+   the parent 
+.slick-list{
+	margin-left:-27px;
+}*/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+.slick-dotted button:focus{
+	outline: 0;
+}
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+.slick-slide:focus{ 
+	outline: none;
+}
+
+/*==========================================================*/
+
+@media screen and (max-width: 768px){
+	h2{
+		font-size: 25px;
+	}
+	.top-header .desktop{
+		float: none;
+		display: none;
+	}
+	.top-header .mobile{
+		display: block;
+	}
+	.empresas-parcerias{
+		flex-direction: column;
+		align-items: center;
+	}
+	.empresas-parcerias>div{
+		max-width: 200px;
+	}
+	.sobre-empresa .diferenciais .diferencial-single{
+		width: 100%;
+	}
+	.lista-beneficios,
+	.imagem-beneficios{
+		width: 100%;
+		margin: 15px 0;
+		text-align: center;
+	}
+	.lista-beneficios>div>.descricao{
+		width: 100%;
+		padding: 0;
+		align-self: center;
+	}
+	.lista-beneficios>div>.icone>img{
+		height: auto;
+	}
+	.conteudo-footer .creditos{
+		float: none;
+		text-align: center;
+	}
+	.conteudo-footer .desktop{
+		float: none;
+		display: none;
+	}
+}
